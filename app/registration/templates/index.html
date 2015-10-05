@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	{% load staticfiles %}
+	<title>{% block title %}Sentiment Analysis{% endblock %}</title>
+
+	<!-- CSS are placed here -->
+	
+	<!-- Scripts are placed here -->
+	<!-- <script src="{% static "js/repeat.js" %}" defer></script> -->
+</head>
+<body>
+	<div class="container">
+
+		{% if user.is_authenticated %}
+			<h1>{{user}}</h1>
+		{%endif%}
+
+
+		
+	</div>
+</body>
+</html>
